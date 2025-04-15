@@ -1495,7 +1495,7 @@ const productsData = [
 		id: 7,
 		title: "Xương cá hồi",
 		description: "Xương cá hồi là phần xương của cá hồi, thường được sử dụng để chế biến các món ăn như súp, hầm hoặc nướng. Xương cá hồi có vị ngọt và béo ngậy, rất giàu dinh dưỡng.",
-		price: 29.95,
+		price: 58,
 		image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Xương cá Hồi17122024034743.jpg",
 		category: "Lifestyle",
 		rating: 4.9,

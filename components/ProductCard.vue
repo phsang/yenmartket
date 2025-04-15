@@ -20,7 +20,7 @@
       <h3 class="product-title">{{ product.title }}</h3>
       <p class="product-description">{{ truncateDescription(product.description) }}</p>
       <div class="product-price-rating">
-        <p class="product-price">{{ product.price.toFixed(2) }} /Kg</p>
+        <p class="product-price">{{ product.price.toFixed(3) }} /Kg</p>
         <div class="product-rating">
           <div class="stars" :title="`Rating: ${product.rating}/5`">
             <template v-for="i in 5" :key="i">

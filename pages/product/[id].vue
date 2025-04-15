@@ -58,7 +58,7 @@
           <span class="rating-value">{{ product.rating.toFixed(1) }} ({{ product.reviews }} reviews)</span>
         </div>
         
-        <div class="product-price">${{ product.price.toFixed(2) }}</div>
+        <div class="product-price">{{ product.price.toFixed(3) }} /Kg</div>
         
         <div class="product-description">
           <h3>Description</h3>

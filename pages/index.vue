@@ -198,8 +198,10 @@ useHead({
   }
 
   .main-slideshow {
-    order: -1;
-    /* Make slideshow appear above the menu on mobile */
+    flex: auto 0 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 360px;
   }
 }
 

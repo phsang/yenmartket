@@ -1,37 +1,42 @@
 <template>
-  <div class="side-menu-wrapper">
-    <nav class="side-menu">
-      <ul class="main-menu">
-        <li v-for="(item, index) in menuItems" 
-            :key="index" 
-            class="menu-item"
-            @mouseenter="activeSubmenu = index"
-            @mouseleave="activeSubmenu = null">
-          <div class="menu-item-content">
-            <NuxtLink :to="item.link" class="menu-link">{{ item.title }}</NuxtLink>
-            <div v-if="item.children && item.children.length" class="submenu-indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
+  <Transition name="fade">
+    <div class="side-menu-wrapper" :class="{ 'menu--active': showMenu }">
+      <nav class="side-menu">
+        <ul class="main-menu">
+          <li v-for="(item, index) in menuItems" 
+              :key="index" 
+              class="menu-item"
+              @mouseenter="activeSubmenu = index"
+              @mouseleave="activeSubmenu = null">
+            <div class="menu-item-content">
+              <NuxtLink :to="item.link" class="menu-link">{{ item.title }}</NuxtLink>
+              <div v-if="item.children && item.children.length" class="submenu-indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
             </div>
-          </div>
-          
-          <!-- Submenu -->
-          <div v-if="item.children && item.children.length && activeSubmenu === index" class="submenu">
-            <ul>
-              <li v-for="(child, childIndex) in item.children" :key="childIndex">
-                <NuxtLink :to="child.link" class="submenu-link">{{ child.title }}</NuxtLink>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </div>
+            
+            <!-- Submenu -->
+            <div v-if="item.children && item.children.length && activeSubmenu === index" class="submenu">
+              <ul>
+                <li v-for="(child, childIndex) in item.children" :key="childIndex">
+                  <NuxtLink :to="child.link" class="submenu-link">{{ child.title }}</NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </Transition>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useMenu } from '~/composables/useMenu'
+
+const { showMenu, toggleMenu } = useMenu()
 
 interface MenuItem {
   title: string;

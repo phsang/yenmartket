@@ -6,7 +6,7 @@
       <div class="list_of_items">
         <div class="container">
           <div class="list_item_btn">
-            <button type="button" class="list_of_items__button">
+            <button type="button" class="list_of_items__button" @click="toggleMenu">
               <span class="list_items_bar"></span>
               <span class="list_items_bar"></span>
               <span class="list_items_bar"></span>
@@ -25,7 +25,9 @@
 </template>
 
 <script setup lang="ts">
-// Default layout component
+import { useMenu } from '~/composables/useMenu'
+
+const { showMenu, toggleMenu } = useMenu()
 </script>
 
 <style>

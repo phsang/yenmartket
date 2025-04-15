@@ -197,6 +197,14 @@ useHead({
     flex-direction: column;
   }
 
+  .side-menu-wrapper {
+    display: none;
+  }
+
+  .side-menu-wrapper.menu--active {
+    display: block;
+  }
+
   .main-slideshow {
     flex: auto 0 0;
     width: 100%;

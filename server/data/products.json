@@ -128,21 +128,51 @@
         "inStock": true
       },
       {
-        "id": 6,
-        "title": "Trứng cá tuyết tẩm gia vị Mentaiko",
-        "description": "Trứng cá tuyết tẩm gia vị Mentaiko là món ăn truyền thống của Nhật Bản, được làm từ trứng cá tuyết tươi sống và gia vị Mentaiko cay nồng. Món ăn này thường được dùng như một món khai vị trong các bữa tiệc hoặc trong các quán bar Nhật Bản.",
-        "price": 128.000,
-        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/Trứng cá tuyết tẩm gia vị Mentaiko {YAMAYA}-80g19122024024928.jpg",
+        "id": 14,
+        "title": "IB Jowl Meat Thịt diềm má 300gr/khay",
+        "description": "IB Jowl Meat Thịt diềm má là phần thịt được chế biến từ thịt heo Iberico, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
+        "price": 282.000,
+        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/IB Jowl Meat Thịt diềm má 300grkhay31122024055316.jpg",
         "rating": 4.3,
         "reviews": 41,
         "inStock": true
       },
       {
-        "id": 7,
-        "title": "Xương cá hồi",
-        "description": "Xương cá hồi là phần xương của cá hồi, thường được sử dụng để chế biến các món ăn như súp, hầm hoặc nướng. Xương cá hồi có vị ngọt và béo ngậy, rất giàu dinh dưỡng.",
-        "price": 58.000,
-        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/Xương cá Hồi17122024034743.jpg",
+        "id": 15,
+        "title": "Lõi nạc vai bò (top blade) Mỹ cắt steak 500g",
+        "description": "Lõi nạc vai bò (top blade) Mỹ cắt steak là phần thịt bò được chế biến từ thịt bò Mỹ, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
+        "price": 359.000,
+        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/Lõi nạc vai bò (top blade) Mỹ cắt steak 500g31122024055634.jpg",
+        "rating": 4.9,
+        "reviews": 156,
+        "inStock": true
+      },
+      {
+        "id": 16,
+        "title": "Thăn Ngoại Bò Hitachi A5 (Sirloin)",
+        "description": "Thăn Ngoại Bò Hitachi A5 (Sirloin) là phần thịt bò được chế biến từ thịt bò Hitachi, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
+        "price": 459.000,
+        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/常陸和牛102012025112230.jpg",
+        "rating": 4.9,
+        "reviews": 156,
+        "inStock": true
+      },
+      {
+        "id": 17,
+        "title": "Thịt ba rọi Bò Mỹ cắt sẵn 500gr",
+        "description": "Thăn Ngoại Bò Hitachi A5 (Sirloin) là phần thịt bò được chế biến từ thịt bò Hitachi, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
+        "price": 358.000,
+        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/ba-chi-cuon-bo-my02012025102223.jpg",
+        "rating": 4.9,
+        "reviews": 156,
+        "inStock": true
+      },
+      {
+        "id": 17,
+        "title": "Thịt diềm thăn (IB Serecto Penceta)",
+        "description": "Thịt diềm thăn (IB Serecto Penceta) là phần thịt được chế biến từ thịt heo Iberico, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
+        "price": 258.000,
+        "image": "https://mastererp.mylifecompany.com//Resources/Images/Items/iberico02012025101926.jpg",
         "rating": 4.9,
         "reviews": 156,
         "inStock": true

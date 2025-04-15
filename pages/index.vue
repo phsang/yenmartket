@@ -118,13 +118,14 @@ useHead({
 }
 
 .section-title {
-  margin: 2rem 0;
+  font-size: 24px;
+  margin: 2rem 0 1rem;
   color: var(--dark-color);
 }
 
 .products-grid {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .empty-state {

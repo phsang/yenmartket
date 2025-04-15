@@ -52,6 +52,7 @@ const { showMenu, toggleMenu } = useMenu()
 .list_of_items__button {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   align-items: space-around;
   justify-content: center;
   background-color: transparent;

@@ -1625,7 +1625,8 @@ const _id_ = defineEventHandler(async (event) => {
   }
   await new Promise((resolve) => setTimeout(resolve, 300));
   try {
-    const product = productsData.find((p) => p.id.toString() === id.toString());
+    const allProducts = productsData.flatMap((category) => category.products);
+    const product = allProducts.find((p) => p.id.toString() === id.toString());
     if (!product) {
       return {
         statusCode: 404,

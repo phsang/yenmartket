@@ -2,7 +2,6 @@ import { defineEventHandler } from 'h3'
 import productsData from '../../data/products.json'
 
 export default defineEventHandler(async (event) => {
-  // Get product ID from the URL
   const id = event.context.params?.id
 
   if (!id) {
@@ -13,12 +12,15 @@ export default defineEventHandler(async (event) => {
     }
   }
 
-  // Simulate network delay for demonstration purposes
+  // Simulate network delay
   await new Promise(resolve => setTimeout(resolve, 300))
 
   try {
+    // Flatten all products from all categories into a single array
+    const allProducts = productsData.flatMap(category => category.products)
+
     // Find the product by ID
-    const product = productsData.find(p => p.id.toString() === id.toString())
+    const product = allProducts.find(p => p.id.toString() === id.toString())
 
     if (!product) {
       return {
@@ -31,8 +33,7 @@ export default defineEventHandler(async (event) => {
     return product
   } catch (error) {
     console.error(`Error fetching product ${id}:`, error)
-    
-    // Send error response
+
     return {
       statusCode: 500,
       statusMessage: 'Internal Server Error',

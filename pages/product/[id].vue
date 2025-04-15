@@ -95,6 +95,9 @@ const id = route.params.id;
 
 // Fetch product data
 const { data: product, pending, error, refresh } = await useFetch(`/api/products/${id}`);
+watchEffect(() => {
+  console.log('Product changed:', product.value);
+});
 
 // SEO meta tags
 useHead(() => {

@@ -209,7 +209,7 @@ useHead({
     flex: auto 0 0;
     width: 100%;
     margin-bottom: 1rem;
-    height: 360px;
+    height: 290px;
   }
 }
 

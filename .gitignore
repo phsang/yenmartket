@@ -6,3 +6,5 @@
 /.nuxt
 
 /dist
+
+/.output

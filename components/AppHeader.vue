@@ -37,24 +37,14 @@
             <span class="cart-count">0</span>
           </div>
           
-          <!-- <nav class="navigation">
-            <ul class="nav-list" :class="{ 'active': isMenuOpen }">
-              <li><NuxtLink to="/" @click="closeMenu">Home</NuxtLink></li>
-              <li><NuxtLink to="/about" @click="closeMenu">About</NuxtLink></li>
-              <li><NuxtLink to="/contact" @click="closeMenu">Contact</NuxtLink></li>
-            </ul>
-            <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
-              <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
-              <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </button>
-          </nav> -->
+          <div class="language">
+            <div class="language-icon">
+              <img src="https://yenmarket.vn/images/flag-vi.svg" alt="flag" width="36">
+            </div>
+            <div class="language-icon">
+              <img src="https://yenmarket.vn/images/flag-en.svg" alt="flag" width="36">
+            </div>
+          </div>
 
         </div>
       </div>
@@ -230,6 +220,15 @@ const closeMenu = () => {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+.language {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.language-icon {
+  align-items: center;
+  display: flex;
+}
 
 @media (max-width: 992px) {
   .hotline span {
@@ -276,6 +275,11 @@ const closeMenu = () => {
   
   .header-right {
     gap: 0.75rem;
+  }
+
+  .header-right .cart-icon,
+  .header-right .hotline {
+    display: none;
   }
 }
 </style>

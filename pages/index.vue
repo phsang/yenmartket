@@ -14,6 +14,18 @@
       />
     </div>
 
+    <div class="news_list">
+      <div class="news_item">
+        <img src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/banner3_1.jpg" alt="Công thức cho những bữa ăn thơm ngon, dinh dưỡng" />
+      </div>
+      <div class="news_item">
+        <img src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/banner3_2.jpg" alt="Dinh dưỡng cho bạn và cả gia đình" />
+      </div>
+      <div class="news_item">
+        <img src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/banner3_3.jpg" alt="Tươi mới mỗi ngày" />
+      </div>
+    </div>
+
     <section id="featured-products" class="products-section">
       <h2 class="section-title">FISH AND SEAFOOD</h2>
       
@@ -124,6 +136,22 @@ useHead({
   margin-bottom: 1rem;
 }
 
+.news_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news_item {
+  padding: 5px 0;
+  width: calc(33.33% - 12px);
+}
+
+.news_item img {
+  width: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 992px) {
   .hero-container {
     flex-direction: column;
@@ -137,6 +165,9 @@ useHead({
 @media (max-width: 768px) {
   .products-grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .news_item {
+    width: 100%;
   }
 }
 

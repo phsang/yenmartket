@@ -26,6 +26,10 @@
       </div>
     </div>
 
+    <div class="main_banner">
+      <img src="https://mastererp.mylifecompany.com/Resources/Images/Object/Banner9114012025041546_S.jpg" alt="main banner" />
+    </div>
+
     <section id="featured-products" class="products-section">
       <h2 class="section-title">FISH AND SEAFOOD</h2>
       
@@ -116,7 +120,7 @@ useHead({
 }
 
 .products-grid {
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   margin-top: 2rem;
 }
 
@@ -150,6 +154,10 @@ useHead({
 .news_item img {
   width: 100%;
   object-fit: contain;
+}
+
+.main_banner img {
+  width: 100%
 }
 
 @media (max-width: 992px) {

@@ -31,8 +31,6 @@
     </div>
 
     <section id="featured-products" class="products-section">
-      <h2 class="section-title">FISH AND SEAFOOD</h2>
-      
       <!-- Loading state -->
       <LoadingSpinner v-if="pending" message="Loading products..." />
       
@@ -45,12 +43,17 @@
       />
       
       <!-- Products grid -->
-      <div v-else-if="data?.products?.length" class="products-grid grid">
-        <ProductCard 
-          v-for="product in data.products" 
-          :key="product.id" 
-          :product="product" 
-        />
+      <div v-else-if="data?.products?.length">
+        <div v-for="product in data.products">
+          <h2 class="section-title">{{product.category}}</h2>
+          <div class="products-grid grid">
+            <ProductCard 
+              v-for="pro in product.products"
+              :key="pro.id" 
+              :product="pro" 
+            />
+          </div>
+        </div>
       </div>
       
       <!-- Empty state -->

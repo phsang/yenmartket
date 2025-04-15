@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+
+[functions]
+  directory = ".output/server"
+
+[context.production.environment]
+  NITRO_PRESET = "netlify"

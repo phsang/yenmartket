@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     payloadExtraction: true
   },
   nitro: {
+    preset: 'netlify',
     prerender: {
       crawlLinks: true,
       routes: ['/']

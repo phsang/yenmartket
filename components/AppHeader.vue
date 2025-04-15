@@ -3,8 +3,20 @@
     <div class="container">
       <div class="header-content">
         <NuxtLink to="/" class="logo">
-          <h1>Yenmarket</h1>
+          <img src="https://yenmarket.vn/_nuxt/logo-brand.D-hX70gZ.png" alt="logo yenmartket" width="100">
         </NuxtLink>
+
+        <div class="header-search">
+          <form action="" class="search-form">
+            <input type="text" placeholder="Key search" class="search-input">
+            <button type="submit" class="search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
         
         <div class="header-right">
           <!-- Hotline -->
@@ -172,6 +184,51 @@ const closeMenu = () => {
   cursor: pointer;
   display: none;
   color: var(--text-color);
+}
+
+.header-search {
+  max-width: 50%;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.search-input {
+  border: solid #ced4da;
+  border-width: 1px 0 1px 1px;
+  border-radius: 4px 0 0 4px;
+  padding: 0.5rem 1rem;
+  height: 40px;
+  width: 320px;
+  max-width: calc(100% - 50px);
+  font-size: 0.9rem;
+}
+.search-button {
+  height: 40px;
+  background-color: transparent;
+  border: solid #ced4da;
+  border-width: 1px 1px 1px 0;
+  border-radius: 0 4px 4px 0;
+  color: #c0c0c0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.search-button svg {
+  width: 1rem;
+  height: 1rem;
+}
+.search-button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+.search-button:focus {
+  outline: none;
+}
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 992px) {

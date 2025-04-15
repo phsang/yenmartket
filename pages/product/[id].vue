@@ -2,25 +2,14 @@
   <div class="product-detail-page">
     <!-- Loading state -->
     <LoadingSpinner v-if="pending" message="Loading product details..." />
-    
+
     <!-- Error state -->
-    <ErrorMessage 
-      v-else-if="error" 
-      :message="error.message || 'Failed to load product details. Please try again later.'" 
-      show-retry 
-      @retry="refresh()" 
-    />
+    <ErrorMessage v-else-if="error" :message="error.message || 'Failed to load product details. Please try again later.'" show-retry @retry="refresh()" />
 
     <!-- Product details -->
     <div v-else-if="product" class="product-details">
       <div class="product-image-container">
-        <img 
-          v-if="product.image" 
-          :src="product.image" 
-          :alt="product.title"
-          class="product-image"
-          loading="lazy"
-        />
+        <img v-if="product.image" :src="product.image" :alt="product.title" class="product-image" loading="lazy" />
         <div v-else class="product-image-placeholder">
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -29,60 +18,50 @@
           </svg>
         </div>
       </div>
-      
+
       <div class="product-info">
         <div class="breadcrumbs">
-          <NuxtLink to="/">Home</NuxtLink> &gt; 
+          <NuxtLink to="/">Home</NuxtLink> &gt;
           <span>{{ product.title }}</span>
         </div>
-        
+
         <h1 class="product-title">{{ product.title }}</h1>
-        
+
         <div class="product-rating">
           <div class="stars" :title="`Rating: ${product.rating}/5`">
             <template v-for="i in 5" :key="i">
-              <svg 
-                v-if="i <= Math.round(product.rating)" 
-                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" 
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star filled">
+              <svg v-if="i <= Math.round(product.rating)" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star filled">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
               </svg>
-              <svg 
-                v-else
-                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star">
+              <svg v-else xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="star">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
               </svg>
             </template>
           </div>
           <span class="rating-value">{{ product.rating.toFixed(1) }} ({{ product.reviews }} reviews)</span>
         </div>
-        
+
         <div class="product-price">{{ product.price.toFixed(3) }} /Kg</div>
-        
+
         <div class="product-description">
           <h3>Description</h3>
           <p>{{ product.description }}</p>
         </div>
-        
+
         <div class="product-actions">
           <button class="btn btn-secondary">Add to Cart</button>
           <button class="btn">Buy Now</button>
         </div>
-        
+
         <div class="product-meta">
           <p><strong>Availability:</strong> {{ product.inStock ? 'In Stock' : 'Out of Stock' }}</p>
         </div>
       </div>
     </div>
-    
+
     <!-- Product not found -->
     <div v-else class="not-found">
-      <ErrorMessage 
-        type="info"
-        title="Product Not Found" 
-        message="The product you're looking for doesn't exist or has been removed." 
-      />
+      <ErrorMessage type="info" title="Product Not Found" message="The product you're looking for doesn't exist or has been removed." />
       <NuxtLink to="/" class="btn back-to-home">Back to Home</NuxtLink>
     </div>
   </div>
@@ -94,9 +73,6 @@ const id = route.params.id;
 
 // Fetch product data
 const { data: product, pending, error, refresh } = await useFetch(`/api/products/${id}`);
-watchEffect(() => {
-  console.log('Product changed:', product.value);
-});
 
 // SEO meta tags
 useHead(() => {
@@ -108,7 +84,7 @@ useHead(() => {
       ]
     };
   }
-  
+
   return {
     title: `${product.value.title} - Yenmarket`,
     meta: [

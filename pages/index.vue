@@ -4,14 +4,9 @@
     <div class="hero-container">
       <!-- Side Menu -->
       <SideMenu />
-      
+
       <!-- Slideshow -->
-      <SlideShow 
-        :slides="slides" 
-        :autoplay="true" 
-        :interval="5000" 
-        class="main-slideshow"
-      />
+      <SlideShow :slides="slides" :autoplay="true" :interval="5000" class="main-slideshow" />
     </div>
 
     <div class="news_list">
@@ -33,32 +28,23 @@
     <section id="featured-products" class="products-section">
       <!-- Loading state -->
       <LoadingSpinner v-if="pending" message="Loading products..." />
-      
+
       <!-- Error state -->
-      <ErrorMessage 
-        v-else-if="error" 
-        :message="error.message || 'Failed to load products. Please try again later.'" 
-        show-retry 
-        @retry="refresh()" 
-      />
-      
+      <ErrorMessage v-else-if="error" :message="error.message || 'Failed to load products. Please try again later.'" show-retry @retry="refresh()" />
+
       <!-- Products grid -->
       <div v-else-if="data?.products?.length">
         <div v-for="product in data.products">
-          <h2 class="section-title">{{product.category}}</h2>
+          <h2 class="section-title">{{ product.category }}</h2>
           <div class="products-grid grid">
-            <ProductCard 
-              v-for="pro in product.products"
-              :key="pro.id" 
-              :product="pro" 
-            />
+            <ProductCard v-for="pro in product.products" :key="pro.id" :product="pro" />
           </div>
           <div class="view-all">
-            <NuxtLink :to="`/product/${product.category_slug}`" class="btn view-all-category">See all</NuxtLink>
+            <a href="#" class="btn view-all-category">See all</a>
           </div>
         </div>
       </div>
-      
+
       <!-- Empty state -->
       <div v-else class="empty-state">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -149,13 +135,20 @@ useHead({
 
 .news_list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  overflow-x: auto;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+.news_list::-webkit-scrollbar {
+  display: none;
 }
 
 .news_item {
   padding: 5px 0;
   width: calc(33.33% - 12px);
+  min-width: 320px;
 }
 
 .news_item img {
@@ -203,9 +196,10 @@ useHead({
   .hero-container {
     flex-direction: column;
   }
-  
+
   .main-slideshow {
-    order: -1; /* Make slideshow appear above the menu on mobile */
+    order: -1;
+    /* Make slideshow appear above the menu on mobile */
   }
 }
 
@@ -213,6 +207,7 @@ useHead({
   .products-grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
+
   .news_item {
     width: 100%;
   }
@@ -220,7 +215,7 @@ useHead({
 
 @media (max-width: 576px) {
   .products-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>

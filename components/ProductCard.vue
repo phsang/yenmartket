@@ -165,6 +165,7 @@ const truncateDescription = (text: string) => {
 }
 
 .view-details {
+  background-color: #ca2628;
   align-self: center;
   width: 100%;
   text-align: center;

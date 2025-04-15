@@ -1427,6 +1427,7 @@ const errorDev = /*#__PURE__*/Object.freeze({
 const productsData = [
 	{
 		category: "FISH AND SEAFOOD",
+		category_slug: "fish-and-seafood",
 		products: [
 			{
 				id: 1,
@@ -1502,6 +1503,7 @@ const productsData = [
 	},
 	{
 		category: "FROZEN MEAT",
+		category_slug: "frozen-meat",
 		products: [
 			{
 				id: 8,

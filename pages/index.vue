@@ -53,6 +53,9 @@
               :product="pro" 
             />
           </div>
+          <div class="view-all">
+            <NuxtLink :to="`/product/${product.category_slug}`" class="btn view-all-category">See all</NuxtLink>
+          </div>
         </div>
       </div>
       
@@ -162,6 +165,38 @@ useHead({
 
 .main_banner img {
   width: 100%
+}
+
+.view-all {
+  margin: 16px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.view-all:before,
+.view-all:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #cfcfcf;
+  top: 50%;
+  width: calc(50% - 60px);
+}
+
+.view-all:before {
+  left: 0;
+}
+
+.view-all:after {
+  right: 0;
+}
+
+.view-all-category {
+  background-color: #ca2628;
+  border-radius: 99px;
+  width: 100px;
+  text-align: center;
 }
 
 @media (max-width: 992px) {

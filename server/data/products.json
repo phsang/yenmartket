@@ -1,6 +1,7 @@
 [
   {
     "category": "FISH AND SEAFOOD",
+    "category_slug": "fish-and-seafood",
     "products": [
       {
         "id": 1,
@@ -76,6 +77,7 @@
   },
   {
     "category": "FROZEN MEAT",
+    "category_slug": "frozen-meat",
     "products": [
       {
         "id": 8,

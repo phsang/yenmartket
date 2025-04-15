@@ -1013,7 +1013,7 @@ const _Evn25iEnUGpZOGh8tqL9fdZAgKlypTZr6TkiKMNk8 = (function(nitro) {
 
 const rootDir = "E:/phong van/yenmartket";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"A high-performance Nuxt 3 yenmarket with SSR and optimized for SEO"},{"name":"theme-color","content":"#ffffff"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Nuxt 3 Yenmarket"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"A high-performance Nuxt 3 yenmarket with SSR and optimized for SEO"},{"name":"theme-color","content":"#ffffff"}],"link":[{"rel":"icon","type":"image/x-icon","href":"https://yenmarket.vn/images/logo-brand-1.png"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Nuxt 3 Yenmarket"};
 
 const appRootTag = "div";
 

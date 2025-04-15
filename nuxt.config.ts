@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#ffffff' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: 'https://yenmarket.vn/images/logo-brand-1.png' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' }
       ]
     }

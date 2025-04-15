@@ -1434,7 +1434,6 @@ const productsData = [
 				description: "Bạch tuộc sốt wasabi là món ăn truyền thống của Nhật Bản, được làm từ bạch tuộc tươi sống và sốt wasabi cay nồng. Món ăn này thường được dùng như một món khai vị trong các bữa tiệc hoặc trong các quán bar Nhật Bản.",
 				price: 702,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/28ce2d37-5fc8-49ef-8a99-218c4a5b69c302012025043704.jpg",
-				category: "Electronics",
 				rating: 4.8,
 				reviews: 128,
 				inStock: true
@@ -1445,7 +1444,6 @@ const productsData = [
 				description: "Cá hồi Nauy nguyên con tươi là loại cá hồi được nuôi tại vùng biển lạnh giá của Nauy. Cá hồi Nauy nổi tiếng với thịt chắc, ngọt và béo ngậy, thường được dùng để chế biến sushi, sashimi hoặc nướng.",
 				price: 618,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Cá Hồi Nguyên con17122024050223.png",
-				category: "Wearables",
 				rating: 4.5,
 				reviews: 94,
 				inStock: true
@@ -1456,7 +1454,6 @@ const productsData = [
 				description: "Cá hồi Nauy nguyên con tươi là loại cá hồi được nuôi tại vùng biển lạnh giá của Nauy. Cá hồi Nauy nổi tiếng với thịt chắc, ngọt và béo ngậy, thường được dùng để chế biến sushi, sashimi hoặc nướng.",
 				price: 948,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/SP000902-PD00052-WEB_Ca-Hoi-Phi-Le-Phan-Than17122024035448.png",
-				category: "Electronics",
 				rating: 4.2,
 				reviews: 76,
 				inStock: true
@@ -1467,7 +1464,6 @@ const productsData = [
 				description: "Đầu cá hồi là phần đầu của cá hồi, thường được sử dụng để chế biến các món ăn như súp, hầm hoặc nướng. Đầu cá hồi có thịt mềm, ngọt và béo ngậy, rất giàu dinh dưỡng.",
 				price: 98,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/YSEXTF00728112023114821_S17122024032008.jpg",
-				category: "Furniture",
 				rating: 4.7,
 				reviews: 52,
 				inStock: true
@@ -1478,7 +1474,6 @@ const productsData = [
 				description: "Lườn cá hồi Nauy tươi là phần thịt lườn của cá hồi, thường được sử dụng để chế biến các món ăn như sushi, sashimi hoặc nướng. Lườn cá hồi có thịt mềm, ngọt và béo ngậy, rất giàu omega-3 và vitamin D.",
 				price: 178,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Lườn Cá hồi Nauy tươi (Salmon)17122024041523.jpg",
-				category: "Kitchen",
 				rating: 4.6,
 				reviews: 87,
 				inStock: true
@@ -1489,7 +1484,6 @@ const productsData = [
 				description: "Trứng cá tuyết tẩm gia vị Mentaiko là món ăn truyền thống của Nhật Bản, được làm từ trứng cá tuyết tươi sống và gia vị Mentaiko cay nồng. Món ăn này thường được dùng như một món khai vị trong các bữa tiệc hoặc trong các quán bar Nhật Bản.",
 				price: 128,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Trứng cá tuyết tẩm gia vị Mentaiko {YAMAYA}-80g19122024024928.jpg",
-				category: "Home Decor",
 				rating: 4.3,
 				reviews: 41,
 				inStock: true
@@ -1500,7 +1494,6 @@ const productsData = [
 				description: "Xương cá hồi là phần xương của cá hồi, thường được sử dụng để chế biến các món ăn như súp, hầm hoặc nướng. Xương cá hồi có vị ngọt và béo ngậy, rất giàu dinh dưỡng.",
 				price: 58,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Xương cá Hồi17122024034743.jpg",
-				category: "Lifestyle",
 				rating: 4.9,
 				reviews: 156,
 				inStock: true
@@ -1516,7 +1509,6 @@ const productsData = [
 				description: "Ba chỉ bò Mỹ cuộn là món ăn được chế biến từ thịt bò Mỹ, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
 				price: 189,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Ba chỉ bò Mỹ cuộn 500g19122024054738.jpg",
-				category: "Electronics",
 				rating: 4.8,
 				reviews: 128,
 				inStock: true
@@ -1527,7 +1519,6 @@ const productsData = [
 				description: "Ba rọi cuộn là món ăn được chế biến từ thịt heo Iberico, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
 				price: 168,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Ba rọi cuộn (Iberico roll Belly) - Khay 300gr31122024054847.jpg",
-				category: "Wearables",
 				rating: 4.5,
 				reviews: 94,
 				inStock: true
@@ -1538,7 +1529,6 @@ const productsData = [
 				description: "Bánh nhân bạch tuộc Takoyaki là món ăn truyền thống của Nhật Bản, được làm từ bột mì, trứng và bạch tuộc tươi sống. Món ăn này thường được dùng như một món khai vị trong các bữa tiệc hoặc trong các quán bar Nhật Bản.",
 				price: 235,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Bánh nhân bạch tuộc Takoyaki 12kg (40x30g)19122024075236.jpg",
-				category: "Electronics",
 				rating: 4.2,
 				reviews: 76,
 				inStock: true
@@ -1549,7 +1539,6 @@ const productsData = [
 				description: "Bánh nhân bạch tuộc Takoyaki là món ăn truyền thống của Nhật Bản, được làm từ bột mì, trứng và bạch tuộc tươi sống. Món ăn này thường được dùng như một món khai vị trong các bữa tiệc hoặc trong các quán bar Nhật Bản.",
 				price: 189,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Bánh Nhân Bạch Tuộc Takoyaki (2)19122024074330.jpg",
-				category: "Furniture",
 				rating: 4.7,
 				reviews: 52,
 				inStock: true
@@ -1560,7 +1549,6 @@ const productsData = [
 				description: "Đầu Thăn Ngoại Bò Hokubee Úc Đông Lạnh là phần thịt bò được chế biến từ thịt bò Hokubee, thường được dùng để nướng hoặc xào. Món ăn này có vị ngọt, mềm và béo ngậy, rất giàu dinh dưỡng.",
 				price: 349,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Đầu Thăn Ngoại Bò Hokubee Úc Đông Lạnh 300G31122024055105.png",
-				category: "Kitchen",
 				rating: 4.6,
 				reviews: 87,
 				inStock: true
@@ -1571,7 +1559,6 @@ const productsData = [
 				description: "Trứng cá tuyết tẩm gia vị Mentaiko là món ăn truyền thống của Nhật Bản, được làm từ trứng cá tuyết tươi sống và gia vị Mentaiko cay nồng. Món ăn này thường được dùng như một món khai vị trong các bữa tiệc hoặc trong các quán bar Nhật Bản.",
 				price: 128,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Trứng cá tuyết tẩm gia vị Mentaiko {YAMAYA}-80g19122024024928.jpg",
-				category: "Home Decor",
 				rating: 4.3,
 				reviews: 41,
 				inStock: true
@@ -1582,7 +1569,6 @@ const productsData = [
 				description: "Xương cá hồi là phần xương của cá hồi, thường được sử dụng để chế biến các món ăn như súp, hầm hoặc nướng. Xương cá hồi có vị ngọt và béo ngậy, rất giàu dinh dưỡng.",
 				price: 58,
 				image: "https://mastererp.mylifecompany.com//Resources/Images/Items/Xương cá Hồi17122024034743.jpg",
-				category: "Lifestyle",
 				rating: 4.9,
 				reviews: 156,
 				inStock: true

@@ -71,7 +71,6 @@
         </div>
         
         <div class="product-meta">
-          <p><strong>Category:</strong> {{ product.category }}</p>
           <p><strong>Availability:</strong> {{ product.inStock ? 'In Stock' : 'Out of Stock' }}</p>
         </div>
       </div>

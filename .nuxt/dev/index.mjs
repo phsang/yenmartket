@@ -3,36 +3,36 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, createError, getRouterParam, readBody, getQuery as getQuery$1, getResponseStatusText } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/h3/dist/index.mjs';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import destr from 'file://E:/phong%20van/NuxtStaticSite/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/ufo/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/unhead/dist/server.mjs';
-import { isVNode, toValue, isRef } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/vue/index.mjs';
-import { walkResolver } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/unhead/dist/utils.mjs';
-import { renderToString } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/scule/dist/index.mjs';
-import { stringify, uneval } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/devalue/index.js';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://E:/phong%20van/NuxtStaticSite/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, createError, getRouterParam, readBody, getQuery as getQuery$1, getResponseStatusText } from 'file://E:/phong%20van/yenmartket/node_modules/h3/dist/index.mjs';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://E:/phong%20van/yenmartket/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import destr from 'file://E:/phong%20van/yenmartket/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://E:/phong%20van/yenmartket/node_modules/ufo/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://E:/phong%20van/yenmartket/node_modules/unhead/dist/server.mjs';
+import { isVNode, toValue, isRef } from 'file://E:/phong%20van/yenmartket/node_modules/vue/index.mjs';
+import { walkResolver } from 'file://E:/phong%20van/yenmartket/node_modules/unhead/dist/utils.mjs';
+import { renderToString } from 'file://E:/phong%20van/yenmartket/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://E:/phong%20van/yenmartket/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://E:/phong%20van/yenmartket/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://E:/phong%20van/yenmartket/node_modules/scule/dist/index.mjs';
+import { stringify, uneval } from 'file://E:/phong%20van/yenmartket/node_modules/devalue/index.js';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://E:/phong%20van/yenmartket/node_modules/unhead/dist/plugins.mjs';
+import { createHooks } from 'file://E:/phong%20van/yenmartket/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://E:/phong%20van/yenmartket/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://E:/phong%20van/yenmartket/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://E:/phong%20van/yenmartket/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://E:/phong%20van/yenmartket/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://E:/phong%20van/yenmartket/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://E:/phong%20van/yenmartket/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://E:/phong%20van/yenmartket/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://E:/phong%20van/yenmartket/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://E:/phong%20van/yenmartket/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://E:/phong%20van/yenmartket/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://E:/phong%20van/NuxtStaticSite/node_modules/errx/dist/index.js';
+import { getContext } from 'file://E:/phong%20van/yenmartket/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://E:/phong%20van/yenmartket/node_modules/errx/dist/index.js';
 
-const serverAssets = [{"baseName":"server","dir":"E:/phong van/NuxtStaticSite/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"E:/phong van/yenmartket/server/assets"}];
 
 const assets = createStorage();
 
@@ -44,11 +44,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"E:/phong van/NuxtStaticSite","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"E:/phong van/NuxtStaticSite/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"E:/phong van/NuxtStaticSite/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"E:/phong van/NuxtStaticSite/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"E:/phong van/NuxtStaticSite/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"E:/phong van/yenmartket","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"E:/phong van/yenmartket/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"E:/phong van/yenmartket/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"E:/phong van/yenmartket/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"E:/phong van/yenmartket/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1005,13 +1005,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _8KnGG0vdu_rSG7Z1qKOPOwvFYymdXJTSJ1hVjxJy4HI = (function(nitro) {
+const _Evn25iEnUGpZOGh8tqL9fdZAgKlypTZr6TkiKMNk8 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "E:/phong van/NuxtStaticSite";
+const rootDir = "E:/phong van/yenmartket";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"A high-performance Nuxt 3 yenmarket with SSR and optimized for SEO"},{"name":"theme-color","content":"#ffffff"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"}],"style":[],"script":[],"noscript":[],"charset":"utf-8","viewport":"width=device-width, initial-scale=1","title":"Nuxt 3 Yenmarket"};
 
@@ -1030,7 +1030,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _NxuzbOqY8M6EHaAmjDGMc_CZM_DrRKK26Riyk3BuOI = (nitroApp) => {
+const _gjEfP_xWk06gm4QDgdceHRNqFFTpJb8BOZMBndpZvk = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1100,19 +1100,19 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _8KnGG0vdu_rSG7Z1qKOPOwvFYymdXJTSJ1hVjxJy4HI,
-_NxuzbOqY8M6EHaAmjDGMc_CZM_DrRKK26Riyk3BuOI
+  _Evn25iEnUGpZOGh8tqL9fdZAgKlypTZr6TkiKMNk8,
+_gjEfP_xWk06gm4QDgdceHRNqFFTpJb8BOZMBndpZvk
 ];
 
-const _lazy_SpCSRz = () => Promise.resolve().then(function () { return products$1; });
-const _lazy_2MWAe_ = () => Promise.resolve().then(function () { return _id_$1; });
-const _lazy_etlstM = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_PG2Lj5 = () => Promise.resolve().then(function () { return products$1; });
+const _lazy_vTO1sn = () => Promise.resolve().then(function () { return _id_$1; });
+const _lazy_JP74Wd = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/products', handler: _lazy_SpCSRz, lazy: true, middleware: false, method: undefined },
-  { route: '/api/products/:id', handler: _lazy_2MWAe_, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_etlstM, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_etlstM, lazy: true, middleware: false, method: undefined }
+  { route: '/api/products', handler: _lazy_PG2Lj5, lazy: true, middleware: false, method: undefined },
+  { route: '/api/products/:id', handler: _lazy_vTO1sn, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_JP74Wd, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_JP74Wd, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -1605,8 +1605,8 @@ function publicAssetsURL(...path) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getClientManifest = () => import('file://E:/phong%20van/NuxtStaticSite/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://E:/phong%20van/NuxtStaticSite/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://E:/phong%20van/yenmartket/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://E:/phong%20van/yenmartket/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();

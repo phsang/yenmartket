@@ -246,9 +246,7 @@ const resumeAutoplay = () => {
   }
   
   .slide-content {
-    max-width: 80%;
-    padding: 1.5rem;
-    margin-left: 2%;
+    display: none;
   }
   
   .slide-content h2 {

@@ -209,7 +209,7 @@ useHead({
     flex: auto 0 0;
     width: 100%;
     margin-bottom: 1rem;
-    height: 290px;
+    height: 280px;
   }
 }
 
@@ -221,11 +221,19 @@ useHead({
   .news_item {
     width: 100%;
   }
+
+  .main-slideshow {
+    height: 240px;
+  }
 }
 
 @media (max-width: 576px) {
   .products-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .main-slideshow {
+    height: 180px;
   }
 }
 </style>
